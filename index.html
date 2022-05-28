@@ -1,0 +1,89 @@
+<!--
+    To do:
+    - Add logo above name in header
+    - Add nav bar options
+    - Add footer
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="icon" href="./img/logo-sprite/Portfolio Logo Ver 2.png">
+        <title>Vanderal Talagi</title>
+    </head>
+    <body>
+        <nav id="site-nav">
+            <ul>
+                <img src="./img/logo-sprite/Portfolio Logo Ver 2.png">
+                <li><a href="#site-header">Home</a></li>
+                <!--To be built
+                <li><a href="#projects">Projects</a></li>-->
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#about-me">About Me</a></li>
+            </ul>
+        </nav>
+        <!-- nav bar -->
+        <header id="site-header">
+            <div class="container">
+                <hgroup class="headers">
+                <img id="headerLogo" class="header-logo" src="./img/logo-sprite/Portfolio Logo Ver 2.png" alt="Logo">
+                <h1 id="nameHeader" class="preload">Vanderal Talagi</h1>
+                <!--Changes the header to 'You can call me Van'-->
+                <script src="./js/index.js"></script>
+                <h2>Front End Web-Developer</h2>
+                </hgroup>
+            </div>
+        </header>
+        <div id="animation-area">
+            <ul class="box">
+                <li><img src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img src="./img/header-bubbles/header-bubbles.png"></li>
+            </ul>
+        </div>
+        <!-- main sections -->
+        <main id="main">
+            <div class="container">
+                <!-- Will add back in once I have created some projects
+                    <section class="section" id="projects">
+                    <header class="section-headers">
+                        <h1>Projects</h1>
+                        <h2>Here are some projects I have created</h2>
+                    </header>
+                    <ul class="section-lists">
+                    </ul>
+                </section> -->
+                <section class="section" id="resume">
+                    <header class="section-headers">
+                        <h1>Resume</h1>
+                    </header>
+                    <img src="./img/resume-sprite/Resume.png">
+                    <h2><a href="./docs/Vanderal Talagi CV.pdf" download="Vanderal-Talagi.pdf" target="_blank">Click to download</a></h2>
+                </section>
+                <section class="section" id="about-me">
+                    <header class="section-headers">
+                        <h1>About Me</h1>
+                    </header>
+                    <article>
+                        <h2>Hi! My name is Van and I am a Frontend Web-Developer.</h2>
+                        <p>In various roles I have worked within, I have experienced a variety of customer journeys
+                        and aim to develop front end experiences that have customers happy from the get go.<br></p>
+                        <p>At the start of this year I completed an IT Certificate with Open Polytechnic receiving an A in all courses.</p>
+                        <p>You can check out <a href="https://www.linkedin.com/in/vanderal-talagi" target="_blank">Linked In</a> where I will be documenting all of the coding projects I am working on.</p>
+                    </article>
+                </section>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer id="footer">
+            <div id="social-media-icons">
+                <ul>
+                    <li><a href= "https://www.linkedin.com/in/vanderal-talagi" target="_blank"><img id=linked-in-logo src="./img/Linked In Icon.png" alt="Linked in logo"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
