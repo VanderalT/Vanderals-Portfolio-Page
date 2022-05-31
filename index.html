@@ -1,8 +1,7 @@
 <!--
     To do:
-    - Add logo above name in header
-    - Add nav bar options
-    - Add footer
+    - Change Nav and footer to not have lists
+    - Make mobile friendly
 -->
 <!DOCTYPE html>
 <html>
@@ -13,14 +12,16 @@
     </head>
     <body>
         <nav id="site-nav">
-            <ul>
-                <img src="./img/logo-sprite/Portfolio Logo Ver 2.png">
-                <li><a href="#site-header">Home</a></li>
-                <!--To be built
-                <li><a href="#projects">Projects</a></li>-->
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#about-me">About Me</a></li>
-            </ul>
+            <div class="site-nav-container">
+                <img class="nav-logo" src="./img/logo-sprite/Portfolio Logo Ver 2.png">
+                <ul>
+                    <li><a href="#site-header">Home</a></li>
+                    <!--To be built
+                    <li><a href="#projects">Projects</a></li>-->
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                </ul>
+            </div>
         </nav>
         <!-- nav bar -->
         <header id="site-header">
@@ -28,22 +29,26 @@
                 <hgroup class="headers">
                 <img id="headerLogo" class="header-logo" src="./img/logo-sprite/Portfolio Logo Ver 2.png" alt="Logo">
                 <h1 id="nameHeader" class="preload">Vanderal Talagi</h1>
-                <!--Changes the header to 'You can call me Van'-->
-                <script src="./js/index.js"></script>
-                <h2>Front End Web-Developer</h2>
+                <ul class="social-media-headers">
+                    <li><a href= "https://www.linkedin.com/in/vanderal-talagi" target="_blank"><img class=social-media-icon src="./img/Linked In Icon.png" alt="Linked in logo"></a></li>
+                    <li><a href="https://github.com/VanderalT" target="_blank"><img class=social-media-icon src="./img/GitHub-Mark-Light-120px-plus.png" alt="Github Logo"></a></li>
+                </ul>
                 </hgroup>
             </div>
+            <!--Changes the header to 'You can call me Van'-->
+            <script src="./js/index.js"></script>
         </header>
+        <!--Need to test bubble pop online-->
         <div id="animation-area">
             <ul class="box">
-                <li><img src="./img/header-bubbles/header-bubbles.png"></li>
-                <li><img src="./img/header-bubbles/header-bubbles.png"></li>
-                <li><img src="./img/header-bubbles/header-bubbles.png"></li>
-                <li><img src="./img/header-bubbles/header-bubbles.png"></li>
-                <li><img src="./img/header-bubbles/header-bubbles.png"></li>
-                <li><img src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img id="bubble" onclick="bubblePop()" src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img id="bubble" onclick="bubblePop()" src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img id="bubble" onclick="bubblePop()" src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img id="bubble" onclick="bubblePop()" src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img id="bubble" onclick="bubblePop()" src="./img/header-bubbles/header-bubbles.png"></li>
             </ul>
         </div>
+
         <!-- main sections -->
         <main id="main">
             <div class="container">
@@ -61,15 +66,15 @@
                         <h1>Resume</h1>
                     </header>
                     <img src="./img/resume-sprite/Resume.png">
-                    <h2><a href="./docs/Vanderal Talagi CV.pdf" download="Vanderal-Talagi.pdf" target="_blank">Click to download</a></h2>
+                    <h2><a href="./docs/Vanderal Talagi CV.pdf" download="Vanderal-Talagi.pdf" target="_blank">Click here to download</a></h2>
                 </section>
                 <section class="section" id="about-me">
                     <header class="section-headers">
                         <h1>About Me</h1>
                     </header>
                     <article>
-                        <h2>Hi! My name is Van and I am a Frontend Web-Developer.</h2>
-                        <p>In various roles I have worked within, I have experienced a variety of customer journeys
+                        <h2>Hi! My name is Van and I am a Web-Developer.</h2>
+                        <p>In various roles I have worked within I have experienced a variety of customer journeys
                         and aim to develop front end experiences that have customers happy from the get go.<br></p>
                         <p>At the start of this year I completed an IT Certificate with Open Polytechnic receiving an A in all courses.</p>
                         <p>You can check out <a href="https://www.linkedin.com/in/vanderal-talagi" target="_blank">Linked In</a> where I will be documenting all of the coding projects I am working on.</p>
@@ -81,7 +86,8 @@
         <footer id="footer">
             <div id="social-media-icons">
                 <ul>
-                    <li><a href= "https://www.linkedin.com/in/vanderal-talagi" target="_blank"><img id=linked-in-logo src="./img/Linked In Icon.png" alt="Linked in logo"></a></li>
+                    <li><a href= "https://www.linkedin.com/in/vanderal-talagi" target="_blank"><img class=social-media-icon src="./img/Linked In Icon.png" alt="Linked in logo"></a></li>
+                    <li><a href="https://github.com/VanderalT" target="_blank"><img class=social-media-icon src="./img/GitHub-Mark-Light-120px-plus.png" alt="Github Logo"></a></li>
                 </ul>
             </div>
         </footer>
