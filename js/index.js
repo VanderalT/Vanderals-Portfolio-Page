@@ -11,6 +11,15 @@ nameHeader.addEventListener('mouseout', function handleMouseOut() {
 });
 
 
+//Display Mobile Menu
+const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMenuLinks = document.querySelector('#site-links');
+
+const mobileMenuShow = () => {
+    mobileMenuLinks.classList.toggle('active');
+}
+
+mobileMenu.addEventListener('click',mobileMenuShow);
 
 
 // Bubble randomizer
