@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./css/styles.css">
+        <link id="pageStyle" rel="stylesheet" href="./css/styles.css">
         <link rel="icon" href="./img/logo-sprite/Portfolio Logo Ver 2.png">
         <title>Vanderal Talagi</title>
     </head>
@@ -23,6 +23,10 @@
                     <li><a href="#resume">Resume</a></li>
                     <li><a href="#about-me">About Me</a></li>
                 </ul>
+                <label class="theme-switch">
+                    <input type="checkbox" id="themeSwitch">
+                    <span class="theme-slider"></span>
+                </label>
             </div>
         </nav>
         <!-- nav bar -->
@@ -41,11 +45,11 @@
         <!--Need to test bubble pop online-->
         <div id="animation-area">
             <ul class="box">
-                <li><img id="bubble" onclick="bubblePop()" src="./img/header-bubbles/header-bubbles.png"></li>
-                <li><img id="bubble" onclick="bubblePop()" src="./img/header-bubbles/header-bubbles.png"></li>
-                <li><img id="bubble" onclick="bubblePop()" src="./img/header-bubbles/header-bubbles.png"></li>
-                <li><img id="bubble" onclick="bubblePop()" src="./img/header-bubbles/header-bubbles.png"></li>
-                <li><img id="bubble" onclick="bubblePop()" src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img id="bubble" src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img id="bubble" src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img id="bubble" src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img id="bubble" src="./img/header-bubbles/header-bubbles.png"></li>
+                <li><img id="bubble" src="./img/header-bubbles/header-bubbles.png"></li>
             </ul>
         </div>
 

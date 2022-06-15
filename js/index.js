@@ -21,26 +21,16 @@ const mobileMenuShow = () => {
 
 mobileMenu.addEventListener('click',mobileMenuShow);
 
+//Changing Theme
+const themeChanger = document.querySelector('#themeSwitch');
 
-// Bubble randomizer
-
-/* Bubble pop, need to test online
-function bubblePop(){
-    if (document.getElementById('bubble').src == "./img/header-bubbles/header-bubbles.png"){
-        document.getElementById('bubble').src == "./img/header-bubbles/header-bubbles-anim.gif";
-    } 
-    else {
-        document.getElementById('bubble').src == "./img/header-bubbles/header-bubbles.png"
+themeChanger.addEventListener('click', () => {
+    if(themeChanger.checked){
+        document.getElementById('pageStyle').setAttribute('href', './css/styles-dark.css')
     }
-}
-*/
-
-/*Logo pop:
-const headerLogo = document.getElementById('headerLogo');
-
-headerLogo.addEventListener('click', function logoPop(){
-    headerLogo.classList.replace('header-logo','pop');
-})
-*/
+    else {
+        document.getElementById('pageStyle').setAttribute('href', './css/styles.css')
+    }
+});
 
 
