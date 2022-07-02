@@ -366,6 +366,61 @@ body{
     font-size: 1rem;
 }
 
+/*Projects*/
+
+#project-list{
+    display: grid;
+    justify-content: center;
+    list-style: none;
+    margin: none;
+    padding: 0;
+}
+
+#project-list li{
+    display: flex;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #F94892;
+    border-radius: 25px;
+    width: fit-content;
+    background-color: #F94892;
+}
+
+#project-list h1{
+    color: #FBE5E5;
+}
+
+#project-list .project-preview-container{
+    width: fit-content;
+}
+
+#project-list .project-preview{
+    width: 40vw;
+    height: auto;
+}
+
+#project-list .project-summary{
+    width: 15vw;
+    justify-content: center;
+    color: #FBE5E5;
+}
+
+#project-list .project-link{
+    background-color: #F94892;
+    height: auto;
+    width: 3vw;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 5px;
+    transition: 0.2s ease-out;
+}
+
+#project-list .project-link:hover{
+    opacity: 75%;
+    transition: 0.2s ease-in-out;
+}
+
+
 /*Sections*/
 
 #resume img {
@@ -482,7 +537,6 @@ body{
         height: 0;
         width: 0;
         flex-direction: column;
-        transition: all 0.2s ease;
     }
 
     #site-nav .active{
@@ -492,13 +546,12 @@ body{
         list-style: none;
         opacity: 1;
         visibility: visible;
-        transition: all 0.2s ease;
     }
 
     #site-nav ul .nav-logo{
         height: 0;
         width: 0;
-        visibility: hidden;
+        display: none;
     }
 
     #site-nav ul li{
@@ -582,6 +635,29 @@ body{
         font-size: 3rem;
     }
 
+    /*Projects*/
+    #project-list li{
+        flex-direction: column;
+        justify-content: center;
+        font-size: 4vw;
+    }
+
+    #project-list .project-preview{
+        width: 50vw;
+        height: auto;
+    }
+
+    #project-list .project-summary{
+        width: 50vw;
+        color: #FBE5E5;
+    }
+
+    #project-list .project-link{
+        height: auto;
+        width: 10vw;
+    }
+
+    /*Resume*/
     #resume h2{
         font-size: 4vw;
     }
@@ -597,7 +673,7 @@ body{
     }
 
     #about-me article{
-        font-size: 3vw;
+        font-size: 4vw;
         text-align: left;
         margin: 2vw 3vw;
     }
