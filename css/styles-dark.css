@@ -411,6 +411,7 @@ body{
     width: 15vw;
     justify-content: center;
     color: #FBE5E5;
+    margin: 0 2vw;
 }
 
 #project-list .project-link{
