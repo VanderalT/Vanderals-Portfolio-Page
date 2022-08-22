@@ -381,6 +381,7 @@ body{
     justify-content: center;
     list-style: none;
     margin: none;
+    margin-bottom: 20px;
     padding: 0;
 }
 
@@ -649,6 +650,7 @@ body{
     }
 
     /*Projects*/
+
     #project-list li{
         flex-direction: column;
         justify-content: center;
