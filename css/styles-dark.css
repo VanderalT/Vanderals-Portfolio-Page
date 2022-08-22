@@ -433,6 +433,10 @@ body{
 
 /*Sections*/
 
+#resume {
+    margin-top: 20px;
+}
+
 #resume img {
     padding-top: 20px;
     height: 200px;
