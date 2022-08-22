@@ -383,6 +383,7 @@ body{
     border-color: #F94892;
     border-radius: 25px;
     width: fit-content;
+    margin-top: 20px;
     background-color: #F94892;
 }
 
@@ -395,8 +396,8 @@ body{
 }
 
 #project-list .project-preview{
-    width: 40vw;
-    height: auto;
+    width: auto;
+    height: 30vh;
 }
 
 #project-list .project-summary{
