@@ -356,7 +356,7 @@ body{
 #main .section{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #main .section-headers{
@@ -674,9 +674,6 @@ body{
     }
 
     /*Resume*/
-    #resume{
-        margin-top: 20px;
-    }
 
     #resume h2{
         font-size: 4vw;
